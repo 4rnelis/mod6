@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+    <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+    <h1>Edit Page</h1>
+
+    <table id="ingredient-table">
+        <thead>
+            <tr>
+                <th>Ingredient</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td contenteditable="true">Tomatoes</td>
+                <td><button class="remove-row">Remove</button></td>
+            </tr>
+            <tr>
+                <td contenteditable="true">Sugar</td>
+                <td><button class="remove-row">Remove</button></td>
+            </tr>
+            <tr>
+                <td contenteditable="true">Salt</td>
+                <td><button class="remove-row">Remove</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="container">
+        <button id="back-to-gallery-button">Back to Gallery</button>
+    </div>
+    <div class="container2">
+        <button id="save-button">Continue</button>
+        <button id="add-row-button">Add Row</button>
+    </div>
+
+    <script src="edit-script.js"></script>
+</body>
+</html>
