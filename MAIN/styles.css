@@ -5,8 +5,8 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #FFDFD3; /* Light background color */
 }
 
 #header {
@@ -15,30 +15,37 @@ body {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 48px;
     color: #3498db;
 }
 
 #video-container {
-    margin-bottom: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 40px;
+    border: 2px solid #3498db;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 #video-preview {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 25px;
+    font-size: 18px;
     cursor: pointer;
     background-color: #3498db;
     color: #fff;
     border: none;
     border-radius: 5px;
-    margin: 5px;
-    transition: background-color 0.3s ease;
+    margin: 10px 5px;
+
 }
 
 button:hover {
     background-color: #2980b9;
+    color: #fff;
 }
