@@ -5,7 +5,7 @@
     const ingredientTable = document.getElementById('ingredient-table');
 
     backButton.addEventListener('click', () => {
-        window.location.href = 'gallery.html'; // Change to the actual gallery page
+        window.location.href = 'gallery.html';
     });
 
     saveButton.addEventListener('click', () => {
@@ -15,7 +15,7 @@
 
         console.log('editedIngredients:', ingredients);
 
-        window.location.href = 'recipePage.html'; // Change to the actual recipe page
+        window.location.href = 'recipePage.html';
     });
 
     addRowButton.addEventListener('click', () => {

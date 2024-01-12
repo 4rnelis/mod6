@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     continueButton.addEventListener('click', () => {
         localStorage.setItem('capturedImages', JSON.stringify(capturedImages));
 
-        window.location.href = 'edit.html'; // Change 'edit.html' to the actual edit page
+        window.location.href = 'edit.html';
     });
 
     function createImageElement(imageDataURL, index) {
