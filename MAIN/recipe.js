@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             <div>
                 <img src="${recipe.image}" alt="${recipe.label}">
                 <h3>${recipe.label}</h3>
+                <p>Allergies: ${recipe.cautions.join(', ')}</p>
                 <ul>
                     ${recipe.ingredientLines.map(ingredient => `<li>${ingredient}</li>`).join('')}
                 </ul>
