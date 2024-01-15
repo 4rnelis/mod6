@@ -54,6 +54,28 @@ svg:hover {
     fill: #997bff; /* Change to the desired hover color */
 }
 
+#take-photo,
+#gallery {
+    transition: fill 0.3s ease; /* Add transition for smooth color change */
+}
+
+#take-photo.clicked,
+#gallery.clicked {
+    animation: buttonClickAnimation 0.3s ease;
+}
+
+@keyframes buttonClickAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 #take-photo {
     margin-right: 50px;
 }
