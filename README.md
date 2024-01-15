@@ -1,1 +1,1 @@
-<a href="./MAIN/index.html" target="_blank">Introduction</a>
+<a href="./index.html" target="_blank">Introduction</a>
