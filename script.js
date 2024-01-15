@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     galleryButton.addEventListener('click', () => {
         localStorage.setItem('capturedImages', JSON.stringify(capturedImages));
-
+        console.log("link");
         window.location.href = 'gallery.html';
     });
 });
@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 //     galleryButton.addEventListener('click', () => {
 //         localStorage.setItem('capturedImages', JSON.stringify(capturedImages));
+            
 
 //         window.location.href = 'gallery.html';
 //     });
