@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: ghostwhite;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: xxx-large;
+    background-color: #997bff;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.container,
+.container2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container,
+    .container2 {
+        width: 100%;
+        padding: 0 20px; /* Add padding to the sides for better mobile experience */
+    }
+}
+
+#back-to-gallery-button,
+#save-button,
+#add-row-button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#back-to-gallery-button:hover,
+#save-button:hover,
+#add-row-button:hover {
+    fill: #997bdd;
+}
+
+#ingredient-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#ingredient-table th,
+#ingredient-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: white;
+}
+
+#ingredient-table th {
+    background-color: #997bff;
+    color: white;
+}
+
+#ingredient-table button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#ingredient-table button:hover {
+    background-color: #d32f2f;
+}
+
+/* Add your additional styles as needed */
