@@ -1,31 +1,24 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const videoContainer = document.getElementById('video-container');
     const videoPreview = document.getElementById('video-preview');
-    const switchCameraButton = document.getElementById('switch-camera');
-    const scanButton = document.getElementById('take-photo');
-    const galleryButton = document.getElementById('gallery');
+    const scanButton = document.getElementById('scan-button');
+    const galleryButton = document.getElementById('gallery-button');
 
-    let isFrontCamera = true;
-    let capturedImages = [];
-
-    switchCameraButton.addEventListener('click', () => {
-        isFrontCamera = !isFrontCamera;
-        initializeCamera();
-    });
-
-    const initializeCamera = () => {
-        const videoConstraints = isFrontCamera ? { facingMode: 'user' } : { facingMode: { exact: 'environment' } };
-
-        navigator.mediaDevices.getUserMedia({ video: videoConstraints })
-            .then((stream) => {
-                videoPreview.srcObject = stream;
-            })
-            .catch((error) => {
-                console.error('Error accessing camera:', error);
-            });
+    const constraints = {
+        video: {
+            facingMode: 'environment' // Use the back camera
+        }
     };
 
-    initializeCamera();
+    navigator.mediaDevices.getUserMedia(constraints)
+        .then((stream) => {
+            videoPreview.srcObject = stream;
+        })
+        .catch((error) => {
+            console.error('Error accessing camera:', error);
+        });
+
+    let capturedImages = [];
 
     scanButton.addEventListener('click', () => {
         const canvas = document.createElement('canvas');
@@ -47,7 +40,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         window.location.href = 'gallery.html';
     });
 });
-
 // document.addEventListener('DOMContentLoaded', (event) => {
 //     const videoContainer = document.getElementById('video-container');
 //     const videoPreview = document.getElementById('video-preview');
