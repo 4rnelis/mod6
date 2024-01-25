@@ -8,6 +8,7 @@ a {
 }
 
 .select-container {
+    margin-left: 1%;
     flex-grow: 1;
     overflow-x: auto;
     white-space: nowrap;
@@ -85,6 +86,7 @@ button[type="submit"]:hover {
     border-bottom: 10px solid transparent;
     border-right: 15px solid transparent;
     clip-path: polygon(0 0, 100% 0, 50% 100%);
+    margin-right: 1%;
 }
 
 .triangleButton:hover {
@@ -108,15 +110,6 @@ h2 {
     align-items: center;
 }
 
-input[type="range"] {
-    width: 80%;
-    padding: 15px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    border: none;
-    background-color: #cccccc;
-    outline: none;
-}
 
 /*.price-input {*/
 /*    width: 100%;*/
@@ -254,6 +247,7 @@ h2 {
 }
 
 input[type="number"] {
+
     padding: 10px;
     margin: 10px;
 }
@@ -349,4 +343,12 @@ h1 {
 
 #results a:hover {
     background-color: #997bdd;
+}
+
+.calorie-container {
+    margin-left: 1%;
+}
+
+#cals {
+    margin-left: 1%;
 }

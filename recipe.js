@@ -71,7 +71,7 @@ function expandList() {
                         <div class="select-option1" data-value="Wheat-Free">Wheat-Free</div>
                         </div>
                 </div>
-                <h2>Calories (kcal)</h2>
+                <h2 id="cals">Calories (kcal)</h2>
                 <div class="calorie-container">
                     <input type="number" id="minValue" name="min" placeholder="min" step="1" required>
 
